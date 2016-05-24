@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Smash Faces</title>
+	  <link href='https://fonts.googleapis.com/css?family=Ubuntu:700,500,400' rel='stylesheet' type='text/css'>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<section id="presentacion" class="container-fluid">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Smash Faces</h1>
+					<p>Bienvenidas al juego de Smash Faces, tu misión es poder identificar a todas tus compañeras de clase ingresando para ello su nombre. Tienes 5 oportunidades antes de perder 1 punto y pasar a la siguiente.
+				</p>	
+				</div>			
+			</div>
+		</section>
+		<section id="smashFaces" class="container-fluid">
+			<div class="row">
+				<div id="sede" class="col-xs-6">
+					<span class="indicacion">Elige tu sede: </span>
+					<select id="eligeSede">
+						<option value="0">Lima</option>
+						<option value="1">Mexico</option>
+					</select>					
+				</div>	
+				<div class="contadorPuntaje" class="col-xs-6">
+					<p id="puntaje">Puntos: <span id="totalPuntaje"></span></p>
+				</div>
+			</div>
+			<div class="row">
+				<div id="juegoSF">
+					<div class="col-xs-12 col-sm-5 no-pd-r">
+						<div id="fotos">
+							<img src="" alt="foto Coder" id="fotoCoder">
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-7 no-pd-l">
+						<div id="jugar">
+							<p>Ingresa su nombre:</p>
+							<input type="text" name="nombre" id="nombreAlumna" class="inputNombre">
+							<button id="comprobarNombre" class="btn btn-default" type="submit">Comprobar</button>
+							<p id="resultado"></p>
+							<p id="intentos">Tienes 5 intentos</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="js/peru.js"></script>
+		<script src="js/mexico.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
